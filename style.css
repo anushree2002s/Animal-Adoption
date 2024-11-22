@@ -1,0 +1,76 @@
+/* fonts */
+:root {
+    --logo-font: "El Messiri";
+    --heading-font: "Volkhov";
+    --body-font: "Poppins";
+}
+
+/* colors */
+:root{
+    --primary-font: #313340;
+    --secondary-font: #111111;
+    --nav-bar-font: #535054;
+    --button-font: #fefefe;
+    --primary-color: #313340;
+    --secondary-color: #D3CAC1;
+    --button-color: #3B3D4B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section{
+    background-color: var(--secondary-color);
+    height: 90vh;
+}
+
+.navbar-nav a{
+    color: var(--nav-bar-font);
+    font-family: --var(--body-font);
+    font-weight: 400;
+}
+
+.navbar-nav a:hover{
+    border-bottom: 1px solid #535054;;
+}
+
+.logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--logo-font);
+    font-weight: bold;
+    color: var(--primary-font)
+}
+
+.logo:hover{
+    transform: scale(1.15);
+}
+
+.dog-image{
+    transform: rotate(-5deg); 
+    max-width: 100%;
+}
+
+.adopt-content{
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.adopt-content h2{
+    width: 70%;
+}
+
+.adopt-content a{
+    text-decoration: none;
+    font-family: var(--body-font);
+    color: var(--button-font);
+}
+
+.adopt-btn{
+    background-color: var(--button-color);
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
