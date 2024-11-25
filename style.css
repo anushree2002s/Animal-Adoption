@@ -55,11 +55,15 @@
 
 .adopt-content{
     font-family: var(--heading-font);
-    font-weight: bold;
+    font-weight: bold;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .adopt-content h2{
     width: 70%;
+    margin-bottom: 2rem;
 }
 
 .adopt-content a{
@@ -73,4 +77,8 @@
     padding: 1rem;
     border-radius: 30px;
     margin-top: 1rem;
+}
+
+.adopt-btn:hover{
+    background-color: #272831;;
 }
