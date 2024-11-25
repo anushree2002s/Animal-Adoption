@@ -14,6 +14,7 @@
     --primary-color: #313340;
     --secondary-color: #D3CAC1;
     --button-color: #3B3D4B;
+    --button-hover-color:#272831;
 }
 
 *{
@@ -80,5 +81,83 @@
 }
 
 .adopt-btn:hover{
-    background-color: #272831;;
+    background-color:var(--button-hover-color)
+}
+
+@media (max-width:768px) {
+    .adopt-content{
+        left: 0%;
+    }
+    
+    .dog-image{
+        max-width: 100%;
+    }
+
+    .adopt-content{
+        width: 30%;
+    }
+    
+}
+
+/* friend container */
+.friend-container{
+    margin-top: 10rem;
+}
+
+@media (max-width:768px) {
+    .friend-container{
+        margin-top: 5rem;
+    }
+}
+
+.friend-heading{
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.find-btn{
+    background-color: var(--button-color);
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--button-font);
+    border: 1px solid #fff;
+}
+
+.find-btn:hover{
+    background-color: var(--button-hover-color);
+}
+
+/* adopt today */
+.mid-container{
+    background-color: #EBEBEC;
+    padding: 0 10rem;
+}
+
+@media (max-width:768px) {
+    .mid-container{
+        padding: 3rem;
+    }
+    
+}
+
+.left-section h1{
+    font-family: var(--heading-font);
+    color: var(--primary-font);
+}
+
+.left-section p{
+    font-family: var(--body-font);
+}
+
+/* adoption steps */
+.adoption-container{
+    height: 50vh;
+}
+
+.adoption-container h1{
+    font-family: var(--heading-font);
+    color: var(--primary-font);
 }

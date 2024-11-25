@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     />
   </head>
+  <body>
     <!-- icons -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <!-- cat -->
@@ -135,100 +136,177 @@
 
     <!-- hero -->
     <div class="hero-section px-5 py-4">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <!-- logo -->
-              <a class="logo" href="#">
-                <svg class="icon" width="50" height="50">
-                    <use xlink:href="#paw-dark"></use>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- logo -->
+          <a class="logo" href="#">
+            <svg class="icon" width="50" height="50">
+              <use xlink:href="#paw-dark"></use>
+            </svg>
+            FURR-EVER HOMES
+          </a>
+          <!-- toggle for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Adopt A Pet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <svg class="icon" width="30" height="30">
+                    <use xlink:href="#person"></use>
                   </svg>
-                FURR-EVER HOMES
-              </a>
-              <!-- toggle for mobile -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <!-- navbar -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Adopt A Pet</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">How It Works</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Help Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#">
-                        <svg class="icon" width="30" height="30">
-                            <use xlink:href="#person"></use>
-                          </svg>
-                      <span class="ms-1">Log In</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+                  <span class="ms-1">Log In</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-          <!-- hero-content -->
-           <div class="hero-content">
-            <div class="row align-items-center">
-                <!-- image-->
-                <div class="col-md-6 dog-image">
-                  <img
-                    src="images/dog.png"
-                    alt="Dog"
-                    class="dog-image"
-                  />
-                </div>
+      <!-- hero-content -->
+      <div class="hero-content">
+        <div class="row align-items-center">
+          <!-- image-->
+          <div class="col-md-6 dog-image">
+            <img src="images/dog.png" alt="Dog" class="dog-image" />
+          </div>
 
-                <!-- adopt column -->
-                <div class="col-md-6 adopt-content ">
-                  <h2>You can make a difference in their lives.</h2>
-                  <a href="#" class="adopt-btn">
-                    Adopt A Pet <svg class="icon" width="24" height="24">
-                        <use xlink:href="#paw-light"></use>
-                      </svg>
-                  </a>
-                </div>
-              </div>
-           </div>
+          <!-- adopt column -->
+          <div class="col-md-6 adopt-content">
+            <h2>You can make a difference in their lives.</h2>
+            <a href="#" class="adopt-btn">
+              Adopt A Pet
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="#paw-light"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- find a friend -->
-     <div class="friend-container">
+    <div class="friend-container">
       <div class="d-flex flex-column flex-md-row align-items-center">
         <!-- title and icon -->
-         <div class="mb-3 d-flex align-items-center mb-md-0">
+        <div class="mb-3 d-flex align-items-center mb-md-0">
           <!-- also the mb-md-0 means the margin at bottom is 0 when THE SCREEN IS BIGGER THAN MEDIUM. REMEMBER!!!! -->
-          <svg class="icon" width="24" height="24">
+          <h2 class="friend-heading mx-3">Find & Adopt</h2>
+          <svg class="icon mx-3" width="60" height="60">
             <use xlink:href="#dog"></use>
           </svg>
-          <svg class="icon" width="24" height="24">
+          <svg class="icon" width="60" height="60">
             <use xlink:href="#cat"></use>
           </svg>
-         </div>
+        </div>
+        <!-- dropdowns -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between w-50 mb-3 mb-md me-md-3"
+        >
+          <select class="form-select mb-2 mx-2">
+            <option selected disabled>City</option>
+            <option value="1">Kathmandu</option>
+            <option value="2">Lalitpur</option>
+            <option value="3">Bhaktapur</option>
+          </select>
+          <select class="form-select mb-2 mx-2">
+            <option selected disabled>Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+
+        <!-- button -->
+        <div class="text-md-end align-items-center">
+          <button class="find-btn w-100 w-md-auto">
+            Find a Friend
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="#paw-light"></use>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
+
+    <!-- adopt today -->
+    <div class="mid-container my-5">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <!-- left side -->
+        <div class="left-section text-center text-md-start me-md-4">
+          <h1>Adopt Today</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <button class="find-btn my-4">
+            Find a Friend
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="#paw-light"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- right side -->
+        <div class="right-section mx-5">
+          <img
+            src="images/mid-dog.png"
+            class="d-none d-md-block"
+            alt="Cute Dog"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- adoption steps-->
+     <div class="adoption-container">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <!-- left side -->
+        <div class="left-section mx-5">
+          <img
+            src="images/person-cat.png"
+            class="d-none d-md-block"
+            alt="woman with cat"
+          />
+        </div>
+
+        <!-- right side -->
+         <div class="right-side d-flex flex-column align-items-center">
+         <h1>How Adoption Works?</h1>
+         
+        </div>
      </div>
-     
+
+
 
     <script src="scripts.js"></script>
     <script
