@@ -6,116 +6,115 @@
 }
 
 /* colors */
-:root{
+:root {
     --primary-font: #313340;
     --secondary-font: #111111;
     --nav-bar-font: #535054;
     --button-font: #fefefe;
     --primary-color: #313340;
-    --secondary-color: #D3CAC1;
-    --button-color: #3B3D4B;
-    --button-hover-color:#272831;
+    --secondary-color: #d3cac1;
+    --button-color: #3b3d4b;
+    --button-hover-color: #272831;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.hero-section{
+.hero-section {
     background-color: var(--secondary-color);
     height: 90vh;
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: var(--nav-bar-font);
     font-family: --var(--body-font);
     font-weight: 400;
 }
 
-.navbar-nav a:hover{
-    border-bottom: 1px solid #535054;;
+.navbar-nav a:hover {
+    border-bottom: 1px solid #535054;
 }
 
-.logo{
+.logo {
     text-transform: uppercase;
     text-decoration: none;
     font-family: var(--logo-font);
     font-weight: bold;
-    color: var(--primary-font)
+    color: var(--primary-font);
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.15);
 }
 
-.dog-image{
-    transform: rotate(-5deg); 
+.dog-image {
+    transform: rotate(-5deg);
     max-width: 100%;
 }
 
-.adopt-content{
+.adopt-content {
     font-family: var(--heading-font);
-    font-weight: bold;   
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
 }
 
-.adopt-content h2{
+.adopt-content h2 {
     width: 70%;
     margin-bottom: 2rem;
 }
 
-.adopt-content a{
+.adopt-content a {
     text-decoration: none;
     font-family: var(--body-font);
     color: var(--button-font);
 }
 
-.adopt-btn{
+.adopt-btn {
     background-color: var(--button-color);
     padding: 1rem;
     border-radius: 30px;
     margin-top: 1rem;
 }
 
-.adopt-btn:hover{
-    background-color:var(--button-hover-color)
+.adopt-btn:hover {
+    background-color: var(--button-hover-color);
 }
 
-@media (max-width:768px) {
-    .adopt-content{
+@media (max-width: 768px) {
+    .adopt-content {
         left: 0%;
     }
-    
-    .dog-image{
+
+    .dog-image {
         max-width: 100%;
     }
 
-    .adopt-content{
+    .adopt-content {
         width: 30%;
     }
-    
 }
 
 /* friend container */
-.friend-container{
+.friend-container {
     margin-top: 10rem;
 }
 
-@media (max-width:768px) {
-    .friend-container{
+@media (max-width: 768px) {
+    .friend-container {
         margin-top: 5rem;
     }
 }
 
-.friend-heading{
+.friend-heading {
     font-family: var(--heading-font);
     font-weight: bold;
 }
 
-.find-btn{
+.find-btn {
     background-color: var(--button-color);
     padding: 1rem;
     border-radius: 30px;
@@ -126,38 +125,140 @@
     border: 1px solid #fff;
 }
 
-.find-btn:hover{
+.find-btn:hover {
     background-color: var(--button-hover-color);
 }
 
 /* adopt today */
-.mid-container{
-    background-color: #EBEBEC;
+.mid-container {
+    background-color: #ebebec;
     padding: 0 10rem;
 }
 
-@media (max-width:768px) {
-    .mid-container{
+@media (max-width: 768px) {
+    .mid-container {
         padding: 3rem;
     }
-    
 }
 
-.left-section h1{
+.left-section h1 {
     font-family: var(--heading-font);
     color: var(--primary-font);
 }
 
-.left-section p{
+.left-section p {
     font-family: var(--body-font);
 }
 
 /* adoption steps */
-.adoption-container{
+.adoption-container {
     height: 50vh;
 }
 
-.adoption-container h1{
+.adoption-container .left-section img {
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.adoption-container h1 {
     font-family: var(--heading-font);
     color: var(--primary-font);
+    margin-bottom: 2rem;
 }
+
+.accordion {
+    width: 40vw;
+    height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .accordion {
+        width: 80vw;
+    }
+}
+
+.accordion-header {
+    font-family: var(--body-font);
+}
+
+.accordion-body {
+    font-family: var(--body-font);
+}
+
+/* what can you do? */
+.love-animals {
+    margin: 25rem 5rem 0 5rem;
+}
+
+.love-animals h2 {
+    font-family: var(--heading-font);
+}
+
+.help-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.help-card h5 {
+    font-family: var(--heading-font);
+}
+
+.help-card p {
+    font-family: var(--body-font);
+}
+
+.help-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.love-animals-btn {
+    background-color: var(--button-color);
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--button-font);
+    border: 1px solid #fff;
+}
+
+.love-animals-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* news and tips */
+.blog {
+    background-color: var(--secondary-color);
+}
+
+.scrollable-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.card img {
+    height: 100%;
+}
+
+.blog .right-side h2{
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.blog .right-side .card{
+    background-color: #f8f8f8;
+}
+
+.blog .right-side .card-title{
+    font-family: var(--heading-font);
+}
+
+.blog .right-side .card-text{
+    font-family: var(--body-font);
+}
+
