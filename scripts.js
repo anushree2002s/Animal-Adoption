@@ -3,19 +3,18 @@ const hamburger = document.querySelector(".hamburger-menu");
 const sideMenu = document.querySelector(".side-menu");
 const closeBtn = document.querySelector(".side-menu .close-btn");
 
-// Ensure elements exist before adding event listeners
 if (hamburger && sideMenu && closeBtn) {
-  // Open side menu
+  // open side menu
   hamburger.addEventListener("click", () => {
     sideMenu.classList.add("active");
   });
 
-  // Close side menu
+  // close side menu
   closeBtn.addEventListener("click", () => {
     sideMenu.classList.remove("active");
   });
 
-  // Close side menu when clicking outside
+  // close side menu when clicking outside
   window.addEventListener("click", (e) => {
     if (!sideMenu.contains(e.target) && !hamburger.contains(e.target)) {
       sideMenu.classList.remove("active");
