@@ -181,6 +181,36 @@
           d="M25 5h-3V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v1H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M12 4h8v4h-8Zm13 24H7V7h3v3h12V7h3Z"
         />
       </symbol>
+      <!-- hamburger -->
+      <symbol id="hamburger" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="#313340"
+          stroke-linecap="round"
+          stroke-width="1.5"
+          d="M20 7H4m16 5H4m16 5H4"
+        />
+      </symbol>
+      <!-- close button -->
+      <symbol id="close" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="#313340"
+          stroke-dasharray="12"
+          stroke-dashoffset="12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"
+        >
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            dur="0.3s"
+            values="12;0"
+          />
+        </path>
+      </symbol>
     </svg>
 
     <!-- hero -->
@@ -194,56 +224,64 @@
             </svg>
             FURR-EVER HOMES
           </a>
-          <!-- nav-bar -->
-          <!-- toggle for mobile -->
-          <!-- <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Adopt A Pet</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">How It Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#">
-                  <svg class="icon" width="30" height="30">
-                    <use xlink:href="#person"></use>
-                  </svg>
-                  <span class="ms-1">Log In</span>
-                </a>
-              </li>
-            </ul>
+          <!-- nav-bar -->
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Adopt A Pet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <svg class="icon" width="30" height="30">
+                  <use xlink:href="#person"></use>
+                </svg>
+                <span class="ms-1">Log In</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger-menu">
+            <svg class="icon" width="30" height="30">
+              <use xlink:href="#hamburger"></use>
+            </svg>
           </div>
         </div>
       </nav>
+
+      <!-- sidebar -->
+      <div class="side-menu">
+        <div class="close-btn">
+          <svg class="icon" width="30" height="30">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+        <ul>
+          <li><a href="#">Adopt A Pet</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Help Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Log In</a></li>
+        </ul>
+      </div>
 
       <!-- hero-content -->
       <div class="hero-content">
         <div class="row align-items-center">
           <!-- image-->
           <div class="col-md-6 dog-image">
-            <img src="images/dog.png" alt="Dog" class="dog-image" />
+            <img src="images/dogg.png" alt="Dog" class="dog-image" />
           </div>
 
           <!-- adopt column -->
@@ -779,7 +817,9 @@
           <div class="col-md-6">
             <span>&copy; 2024. All rights reserved</span>
           </div>
-          <div class="social-icons col-md-6 d-flex justify-content-md-end justify-content-start align-items-center ">
+          <div
+            class="social-icons col-md-6 d-flex justify-content-md-end justify-content-start align-items-center"
+          >
             <span>Follow us on</span>
             <svg class="icon mx-2" width="24" height="24">
               <use xlink:href="#facebook"></use>
