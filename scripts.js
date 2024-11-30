@@ -23,6 +23,52 @@ if (hamburger && sideMenu && closeBtn) {
 }
 
 
+// modal countdown
+const modal = document.getElementById("adoption-campaign-modal");
+    const closeModalBtn = document.querySelector(".close-btn");
+    const countdownEl = document.getElementById("countdown");
+
+    // modal show when page loads
+    document.addEventListener("DOMContentLoaded", () => {
+      modal.style.display = "flex"; 
+      startCountdown(); // timer begin
+    });
+
+    // modal close when clicked on cross
+    closeModalBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // modal close when clicked outside
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    // timer math
+    const targetDate = new Date("2024-12-25T00:00:00").getTime(); //ending date
+
+    function startCountdown() {
+      const timer = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+          clearInterval(timer);
+          countdownEl.textContent = "Campaign Ended!";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }, 1000);
+    }
+
 // // swiper
 // const swiper = new Swiper('.swiper-container', {
 //     loop: true,
